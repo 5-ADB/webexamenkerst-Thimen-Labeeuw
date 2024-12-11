@@ -98,11 +98,16 @@ main .container .box-tekst{
 }
 
 .korting{
-    position: static;
+    top: 50%;
+    right: 0px;
+    position: fixed;
     height: 50px;
     width: 110px;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 25px 0px 0px 25px;
     background-color: rgb(106, 119, 255);
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
 /* Footer */
@@ -113,7 +118,31 @@ footer{
     align-items: center;
     color: white;
     font-weight: 700;
-    margin-top: 41px;
+    bottom: 0px;
     height: 40px;
     background-color: gray;
+}
+
+/* @ media */
+
+@media (max-width: 700px){
+    .korting{
+        display: none;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .container img{
+        border-radius: 0px;
+        width: 90%;
+        height: 90%;
+    }
+
+    footer{
+        bottom: 0px;
+    }
+
 }

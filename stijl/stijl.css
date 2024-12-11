@@ -11,7 +11,7 @@
 /* Header */
 
 header{
-    height: 200px;
+    height: 250px;
     display: flex;
     justify-content: space-between;
     background-image: url(../images/wave.svg);
@@ -20,8 +20,8 @@ header{
 }
 
 header img{
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
 }
 
 header nav ul{
@@ -46,14 +46,14 @@ nav ul li:hover{
 /* Main */
 
 main{
-    height: 900px;
+    height: 100%;
     display: flex;
     justify-content: center;
 }
 
 .container{
-    margin-top: 40px;
-    height: 700px;
+    margin: 40px 0px;
+    height: 1000px;
     width: 1100px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -61,8 +61,8 @@ main{
 }
 
 main .container img{
-    width: 200px;
-    height: 300px;
+    width: 90%;
+    height: 90%;
     object-fit: cover;
 }
 
@@ -80,6 +80,7 @@ main .container .box-tekst{
 }
 
 .box{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,6 +94,7 @@ main .container .box-tekst{
 .fully-rounded{
     border-radius: 60px;
     width: 400px !important;
+    height: 270px !important;
 }
 
 .half-rounded{
@@ -105,13 +107,17 @@ main .container .box-tekst{
     top: 50%;
     right: 0px;
     position: fixed;
-    height: 50px;
-    width: 110px;
-    border-radius: 25px 0px 0px 25px;
+    height: 70px;
+    width: 160px;
+    border-radius: 35px 0px 0px 35px;
     background-color: rgb(106, 119, 255);
     display: flex;
     justify-content: end;
     align-items: center;
+}
+
+.korting p{
+    margin-right: 20px;
 }
 
 /* Footer */
@@ -138,9 +144,9 @@ footer{
 /* @ media */
 
 @media (max-width: 700px){
-
+/* main */
     main{
-        height: 1800px;
+        height: 1900px;
     }
 
     .korting{
@@ -150,6 +156,7 @@ footer{
     .container{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     main .container img{
@@ -157,6 +164,12 @@ footer{
         width: 90%;
         height: 90%;
         border: none;
+    }
+
+    .box-tekst{
+        width: 80%;
+        margin-bottom: 40px;
+        
     }
 
 
